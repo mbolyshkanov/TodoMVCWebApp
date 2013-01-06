@@ -13,7 +13,7 @@ namespace TodoMVCWebApp
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            var url = "api/TOdos";
+            var url = "api/Todos";
 
             routes.MapRoute("Todo_GET", url, new { controller = "Home", action = "Get", area = "" }, new { httpMethod = new HttpMethodConstraint("GET") });
             routes.MapRoute("Todo_GET_ONE", url + "/{id}", new { controller = "Home", action = "GetOne" }, new { httpMethod = new HttpMethodConstraint("GET") });
